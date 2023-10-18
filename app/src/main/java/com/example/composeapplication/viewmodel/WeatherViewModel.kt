@@ -15,7 +15,7 @@ class WeatherViewModel : ViewModel() {
     var weatherData: MutableState<WeatherState> = mutableStateOf(WeatherState.Empty())
 
     init {
-        getWeatherData("610703", "all", "aGV4vfgLeEF4hLgjAkQAs12RyZe7fCPq")
+        getWeatherData("110100", "all", "YOUR_BAIDU_MAP_API_KEY")
     }
 
     private fun getWeatherData(district_id: String, data_type: String, ak: String) {
