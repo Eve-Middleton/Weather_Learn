@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+
+        gradlePluginPortal()
+        maven{ url = "https://maven.aliyun.com/repository/google"}
+        maven{ url = "https://maven.aliyun.com/repository/public"}
+        maven { url 'https://dl.google.com/dl/android/maven2' }
+        maven { url 'https://repo.maven.apache.org/maven2' }
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven{ url = "https://maven.aliyun.com/repository/google"}
+        maven{ url = "https://maven.aliyun.com/repository/public"}
+        maven { url 'https://dl.google.com/dl/android/maven2' }
+        maven { url 'https://repo.maven.apache.org/maven2' }
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "ComposeApplication"
+include ':app'
